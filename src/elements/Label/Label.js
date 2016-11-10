@@ -107,10 +107,7 @@ export default class Label extends Component {
     onRemove: PropTypes.func,
 
     /** Shorthand for Icon to appear as the last child and trigger onRemove. */
-    removeIcon: customPropTypes.every([
-      customPropTypes.demand(['onRemove']),
-      customPropTypes.itemShorthand,
-    ]),
+    removeIcon: customPropTypes.itemShorthand,
 
     /** A label can appear as a ribbon attaching itself to an element. */
     ribbon: PropTypes.oneOfType([

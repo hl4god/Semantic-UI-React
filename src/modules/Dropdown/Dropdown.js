@@ -199,10 +199,7 @@ export default class Dropdown extends Component {
      * A function that takes (data, index, defaultLabelProps) and returns
      * shorthand for Label .
      */
-    renderLabel: customPropTypes.every([
-      customPropTypes.demand(['multiple']),
-      PropTypes.func,
-    ]),
+    renderLabel: PropTypes.func,
 
     /** A dropdown can have its menu scroll. */
     scrolling: PropTypes.bool,
